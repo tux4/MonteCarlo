@@ -1,0 +1,22 @@
+Library for Monte Carlo simulation and visualisation
+----------------------------------------------------
+This is a basic library that has classes and methods that 
+should help to do 2-d monte carlo simulations
+It consists a basic example to calculate the value of pi=3.14159...
+using these set of libraries.
+
+-To run the simulation for pi_main.py. 
+python pi_main.py
+# Make sure MonteCarlo.py and PiSim.py are present in the same folder.
+
+-Basic concept for Monte Carlo simulation of pi
+1. Pick a nxn grid.
+2. Make sure the x, y co-ordinate of the grid is between 0<x,y<1. (Unit square)
+3. Pick a random point. If it falls in a circle centred at one of the vertices of square, add it to a counter lets call it m.
+4. After a large number of iteration, m/(n*n) = 4Pi. Basic geometry.
+
+This along with the comments in the source code, should be enough to make things clear enough.
+
+Although, this example is the simplest case of Monte Carlo simulation, at least some other basic simulations like 2D Ising model should be easy to implement with this set of libraries. In fact the actual utility of the library should be more obvious in such cases, because pi can be simulated in very few lines of code without visualization.
+
+If there are any further questions, AMA.
